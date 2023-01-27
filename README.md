@@ -2,32 +2,25 @@
 
 # Formação DevOps Desenvolve 2023 - Grupo Boticário
 
-<p align="center">
-  <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#projetos">Projetos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#cronograma">Cronograma</a>
-</p>
+## O Desenvolve é um programa gratuito de formação e inclusão em tecnologia do <b>Grupo Boticário</b> em parceria com a plataforma <b>Alura</b>
 
-<h3>
-O Desenvolve é um programa gratuito de formação e inclusão em tecnologia do <b>Grupo Boticário</b> em parceria com a plataforma <b>Alura</b>.
-</h3>
 <br>
 
 <img width="100%" src="https://user-images.githubusercontent.com/85684965/214452640-e2105924-515e-4c3c-b7fe-06a3ef00e1d2.png">
-
 <br>
 
 <p>
-Saiba mais sobre o Desenvolve: <a href="https://desenvolve.grupoboticario.com.br/">https://desenvolve.grupoboticario.com.br/</a>
+    Saiba mais sobre o Desenvolve: <a href="https://desenvolve.grupoboticario.com.br/">https://desenvolve.grupoboticario.com.br/</a>
 </p>
 
 <br>
 
 <span id="tecnologias"></span>
 
-## 💻 Stacks desenvolvidas durante o programa
+## Tecnologias desenvolvidas
 
 <br>
+
 <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 6px">
 
 <img width="50px" src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png">
@@ -63,6 +56,7 @@ Saiba mais sobre o Desenvolve: <a href="https://desenvolve.grupoboticario.com.br
 <img width="50px" src="https://cdn.iconscout.com/icon/free/png-256/jenkins-1-282385.png?w=128&f=avif">
 
 </div>
+
 <br>
 
 <span id="projetos"></span>
@@ -71,16 +65,15 @@ Saiba mais sobre o Desenvolve: <a href="https://desenvolve.grupoboticario.com.br
 
 <br>
 
-<p>Este repositório tem como objetivo documentar minha trajetória durante o Programa Desenvolve.</p>
+<p>Este repositório tem como objetivo documentar minha trajetória durante o Programa Desenvolve</p>
 
 <br>
-<span id="cronograma"></span>  
-<p>
-Abaixo, você encontra a grade de conteúdos e o cronograma do Desenvolve 2023 para a formação em DevOps.
-</p>
-<p>
-  Início: 23 de Janeiro de 2023.
-</p>
+
+<span id="cronograma"></span> 
+
+<p>Abaixo, você encontra a grade de conteúdos e o cronograma do Desenvolve 2023 para a formação em DevOps</p>
+
+<p>Início: 23 de Janeiro de 2023</p>
 
 
 | Curso	                                                                         | Carga Horária | Módulo           | Semana |
@@ -135,7 +128,11 @@ Abaixo, você encontra a grade de conteúdos e o cronograma do Desenvolve 2023 p
 | Jenkins e Docker: Pipeline de entrega contínua                                 | 10            | Entrega contínua | 23     |
 | Integração Contínua: testes automatizados e pipeline no Github Actions         | 7             | Entrega contínua | 24     |
 | Integração Contínua: Pipeline Docker no Github Actions                         | 7             | Entrega contínua | 24     |
+
 <br>
+
 <p align="right"><a href="#top">⬆️ Voltar ao topo</a></p>
+
 <br>
+
 <div>
