@@ -9,7 +9,7 @@
     <br>
     <p>
         Saiba mais sobre o Desenvolve: <a href="https://desenvolve.grupoboticario.com.br/">https://desenvolve.grupoboticario.com.br/</a>
-    </p>'
+    </p>
 <br>
 </div>
 
@@ -17,58 +17,17 @@
 
 ## 🐍 | Tecnologias desenvolvidas
 
-<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 6px">
+<div>
     <table>
-        <tr>
-            <td>
-                <h3><strong>DevOps</strong></h3>
-            </td>
-            <td>
-                <img width="50px" src="https://cdn-icons-png.flaticon.com/128/6124/6124995.png" alt="Linux">
-            </td>
-            <td>
-                <img width="50px" src="https://cdn.iconscout.com/icon/free/png-256/vim-3-1175075.png?w=128&f=avif" alt="VIM">
-            </td>
-            <td>
-                <img width="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Wifiservice.svg/1277px-Wifiservice.svg.png" alt="Redes">
-            </td>
-            <td>
-                <img width="50px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ8b8HTIRzFWvwyb4l6mrL-mVY0md10Ru1xBbTr7-9IQ&s" alt="NGINX">
-            </td>
-            <td>
-                <img width="50px" src="https://cdn.iconscout.com/icon/free/png-256/docker-226091.png?w=128&f=avif" alt="Docker">
-            </td>
-            <td>
-                <img width="50px" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/kubernetes-icon.svg" alt="Kubernetes">
-            </td>
-            <td>
-                <img width="50px" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/aws-icon.svg" alt="Amazon Web Services">  
-            </td>
-            <td>
-                <img width="50px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxs6F1Y8wFOreLS97kCGSAoKp2d7LLTD6do483qoUL7_XnAEOqmFLq9GGqgXWB6JWV0xs&usqp=CAU" alt="Terraform">
-            </td>
-            <td>
-                <img width="50px" src="https://cdn.iconscout.com/icon/free/png-256/ansible-2752245-2285062.png?w=128&f=avif" alt="Ansible">
-            </td>
-            <td>
-                <img width="50px" src="https://cdn.iconscout.com/icon/free/png-256/jenkins-1-282385.png?w=128&f=avif" alt="Jenkins">
-            </td>
-        </tr>
         <tr>
             <td>
                 <h3><strong>Linguagens de Programação</strong></h3> 
             </td>
             <td>
-                <img width="50px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYY0pvHu6oaaJRADcCoacoP5BKwJN0i1nqFNCnmKvN&s" alt="Python">
+                <img width="50px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8RdXjXF90DRfUbWNZpEp6hBiP0p1WzSlIopL3ZHUBN2FUhruv77AquS56uvYsrD7cgy0&usqp=CAU" alt="Python">
             </td>
             <td>
                 <img width="50px" src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="Javascript">
-            </td>
-            <td>
-                <img width="50px" src="https://cdn.iconscout.com/icon/free/png-512/django-11-1175036.png?f=avif&w=256" alt="Django">
-            </td>
-            <td>
-                <img width="50px" src="https://img.icons8.com/fluency/256/node-js.png" alt="NodeJS">
             </td>
         </tr>
         <tr>
@@ -80,6 +39,81 @@
             </td>
             <td>
                 <img width="50px" src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" alt="MongoDB">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3><strong>Sistema Operacional e Shell</strong></h3>
+            </td>
+            <td>
+                <img width="50px" src="https://cdn-icons-png.flaticon.com/128/6124/6124995.png" alt="Linux">
+            </td>
+            <td>
+                <img width="50px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQArkQ5cCMu_3tZM-ziJQrADTNN_7hq4Jbg19buN2tRq1MzJ1GAI6uFX11VrpuMD2fgKjc&usqp=CAU" alt="Shell Script">
+            </td>
+            <td>
+                <img width="50px" src="https://cdn.iconscout.com/icon/free/png-256/vim-3-1175075.png?w=128&f=avif" alt="VIM">
+            </td>
+            <td>
+                <img width="50px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqxsI_gXjOSYNbp5yIzxF1CUlqWCPRjrBQJItUSknRnO90ZYZj-kWFY0P26txSu5vCwwk&usqp=CAU" alt="PowerShell">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3><strong>Redes e Segurança</strong></h3>
+            </td>
+            <td>
+                <img width="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Wifiservice.svg/1277px-Wifiservice.svg.png" alt="Redes">
+            </td>
+           <td>
+                <img width="50px" height="50px" src="https://info.aafcpa.com/hubfs/Anderson-M.jpg" alt="Segurança de Redes">
+            </td>
+            <td>
+                <img width="50px" height="50px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN90Uc9hO3EVQYv25HleybUmJUcDlmsYqS0w&usqp=CAU" alt="LGPD">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3><strong>Container</strong></h3>
+            </td>
+           <td>
+                <img width="50px" src="https://cdn.iconscout.com/icon/free/png-256/docker-226091.png?w=128&f=avif" alt="Docker">
+            </td>
+            <td>
+                <img width="50px" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/kubernetes-icon.svg" alt="Kubernetes">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3><strong>Cloud e Automação</strong></h3>
+            </td>
+            <td>
+                <img width="50px" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/aws-icon.svg" alt="Amazon Web Services">  
+            </td>
+            <td>
+                <img width="50px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxs6F1Y8wFOreLS97kCGSAoKp2d7LLTD6do483qoUL7_XnAEOqmFLq9GGqgXWB6JWV0xs&usqp=CAU" alt="Terraform">
+            </td>
+            <td>
+                <img width="50px" src="https://cdn.iconscout.com/icon/free/png-256/ansible-2752245-2285062.png?w=128&f=avif" alt="Ansible">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3><strong>Servidor Web</strong></h3>
+            </td>
+            <td>
+                <img width="50px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ8b8HTIRzFWvwyb4l6mrL-mVY0md10Ru1xBbTr7-9IQ&s" alt="NGINX">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3><strong>CI/CD</strong></h3>
+            </td>
+            <td>
+                <img width="50px" src="https://cdn.iconscout.com/icon/free/png-256/jenkins-1-282385.png?w=128&f=avif" alt="Jenkins">
+            </td>
+            <td>
+                <img width="50px" src="https://avatars.githubusercontent.com/u/44036562?s=280&v=4" alt="Github Actions">
             </td>
         </tr>
     </table>
@@ -116,7 +150,10 @@
 7. [Semana 7](./Semana_07/)  
     • [Redes parte 1: conceitos e prática](./Semana_07/Redes_1/)  
     • [Redes parte 2: montando um projeto do cliente até o provedor de serviços](./Semana_07/Redes_2/)  
-
+8. [Semana 8](./Semana_08/)  
+    • [Redes parte 3: defina as listas de controle e políticas de acesso de usuários](./Semana_08/Redes_3/)  
+    • [Redes parte 4: configuração de protocolos de roteamento e IPv6](./Semana_08/Redes_4/)  
+    • [Redes parte 5: Wi-FI](./Semana_08/Redes_5/)  
 </span> 
 
 ---
