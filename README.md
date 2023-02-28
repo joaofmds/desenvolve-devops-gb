@@ -190,19 +190,19 @@
 ### 🧑‍💼 | Experiência profissional
 <table>
 <tr>
+    <td><img src="https://media.licdn.com/dms/image/C4D0BAQElRacnf2tnjQ/company-logo_200_200/0/1639746690906?e=1685577600&v=beta&t=4igU97hNxk1jqFJSnGs2_JZf94cb--lGJ56hMu5dY0I" alt="BR GAAP" width="50" height="50"/></td>
+    <td>
+        <strong>Empresa:</strong> BR GAAP Corporation<br>
+        <strong>Cargo:</strong> Analista DevOps Júnior<br>
+        <strong>Início:</strong> 01/2023 - <strong>Até:</strong> Atual<br>
+    </td>
+</tr>
+<tr>
     <td><img src="https://media.licdn.com/dms/image/C4D0BAQHr82VdoHECSg/company-logo_200_200/0/1650283345676?e=1685577600&v=beta&t=sBBact_1ar1KtdlHeBf7k7V2vBql0apH7Mcpa3qRfAg" alt="Compass.UOL" width="50" height="50"/></td>
     <td>
         <strong>Empresa:</strong> Compass.UOL<br>
         <strong>Cargo:</strong> AWS Cloud Data Engineering<br>
         <strong>Início:</strong> 02/2023 - <strong>Até:</strong> Atual<br>
-    </td>
-</tr>
-<tr>
-    <td><img src="https://media.licdn.com/dms/image/C4D0BAQElRacnf2tnjQ/company-logo_200_200/0/1639746690906?e=1685577600&v=beta&t=4igU97hNxk1jqFJSnGs2_JZf94cb--lGJ56hMu5dY0I" alt="BR GAAP" width="50" height="50"/></td>
-    <td>
-        <strong>Empresa:</strong> BR GAAP Corporation<br>
-        <strong>Cargo:</strong> Programador Cloud Júnior<br>
-        <strong>Início:</strong> 01/2023 - <strong>Até:</strong> Atual<br>
     </td>
 </tr>
 <tr>
