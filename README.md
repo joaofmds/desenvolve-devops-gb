@@ -154,6 +154,10 @@
     • [Redes parte 3: defina as listas de controle e políticas de acesso de usuários](./Semana_08/Redes_3/)  
     • [Redes parte 4: configuração de protocolos de roteamento e IPv6](./Semana_08/Redes_4/)  
     • [Redes parte 5: Wi-FI](./Semana_08/Redes_5/)  
+9. [Semana 9](./Semana_09/)  
+    • [PostgreSQL](./Semana_09/PostgreSQL_I/)  
+    • [PostgreSQL: Views, Sub-Consultas e Funções](./Semana_09/PostgreSQL_II/)  
+    • [MongoDB: uma alternativa aos bancos relacionais tradicionais](./Semana_09/MongoDB/) 
 </span> 
 
 ---
