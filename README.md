@@ -158,6 +158,11 @@
     • [PostgreSQL](./Semana_09/PostgreSQL_I/)  
     • [PostgreSQL: Views, Sub-Consultas e Funções](./Semana_09/PostgreSQL_II/)  
     • [MongoDB: uma alternativa aos bancos relacionais tradicionais](./Semana_09/MongoDB/) 
+10. [Semana 10](./Semana_10/)  
+    • [NGINX: servidor Web, Proxy Reverso e API Gateway](./Semana_10/NGINX_Parte_1/)  
+    • [NGINX Parte 2: performance, FastCGI e HTTPS](./Semana_10/NGINX_Parte_2/)  
+11. [Semana 11](./Semana_11/)  
+    • [Vim: boas práticas a edição no terminal](./Semana_11/VIM/aula0/)  
 </span> 
 
 ---
