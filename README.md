@@ -162,7 +162,10 @@
     • [NGINX: servidor Web, Proxy Reverso e API Gateway](./Semana_10/NGINX_Parte_1/)  
     • [NGINX Parte 2: performance, FastCGI e HTTPS](./Semana_10/NGINX_Parte_2/)  
 11. [Semana 11](./Semana_11/)  
-    • [Vim: boas práticas a edição no terminal](./Semana_11/VIM/aula0/)  
+    • [Vim: boas práticas a edição no terminal](./Semana_11/VIM/aula0/) 
+12. [Semana 12](./Semana_12/)  
+    • [Shell Scripting parte 1: scripts de automação de tarefas](./Semana_12/Shell_Scripting_I/)  
+    • [Shell Scripting parte 2: fazendo monitoramento, agendando tarefas e backup](./Semana_12/Shell_Scripting_II/) 
 </span> 
 
 ---
