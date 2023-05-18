@@ -1,0 +1,124 @@
+# Microsserviços: padrões de projeto
+
+- Conhecendo a arquitetura
+	- Como a web funciona
+		- HTTP
+			- Cliente-Servidor
+		- Aplicações monolíticas
+			- Load Balancer
+		- Alguns problemas
+			- Demora no deploy
+			- Falhas podem derrubar o sistema todo
+			- 1 projeto = 1 tecnologia
+	- O que são microsserviços?
+		- Arquitetura de microsserviços
+		- Definição
+			- Microsserviços são uma abordagem arquitetônica e organizacional do desenvolvimento de software na qual o software consiste em pequenos serviços independentes que se comunicam usando APIs bem definidas. Esses serviços pertencem a pequenas equipes autossuficientes
+	- Vantagens e desvantagens
+		- Vantagens
+			- Projetos independentes = tecnologias independentes
+			- Falha em 1 serviços é isolada
+			- Deploys menores e mais rápidos
+		- Desvantagens
+			- Maior complexidade de desenvolvimento e infra
+			- Debug mais complexo
+			- Comunicação entre os serviços deve ser bem pensada
+			- Diversas tecnologias pode ser um problema
+			- Monitoramento é crucial e mais complexo
+		- Quando utilizar?
+			- Monolito por padrão
+	- Tipos de serviços
+		- Tipos de microsserviços
+			- Data service
+			- Business service
+			- Translation service
+			- Edge service
+- Separando serviços
+	- Serviços de domínio
+		- Domain-driven Design
+		- Comece modelando seu domínio, não pensando na persistência
+		- Avalie as ações que serão disponibilizadas
+		- REST e RPC podem andar juntos
+	- Serviços de negócio
+		- Em determinados momentos as operações precisam de mais de um modelo do nosso domínio para serem corretamente representadas em um serviço
+		- Proveem uma funcionalidade do negócio de mais alto nível
+		- Permite encapsular domínios relacionados
+		- Identificar o processo que pretende-se expor
+		- Identificar os domínios que serão necessários nesse serviço
+		- Definir a  API que será utilizada, focando no domínio e não nos dados
+		- Consumir serviços de domínio para executar os processos
+	- Padrões
+		- Strangler Pattern
+			- Quebrar um monolito, tirando as funcionalidades dele
+			- Podemos começar isolando os dados
+			- Ou podemos começar isolando o domínio
+		- Sidecar Pattern
+			- Determinar o processo comum
+			- Construir um módulo compartilhável
+			- Aplique esse sidecar nos serviços que precisam dele
+- Integrando serviços
+	- API Gateway
+		- Ponto único de entrada
+			- Problema: clientes acessando livremente os serviços geram caos
+			- Gateway fornece um proxy, uma fachada, para as necessidades reais
+			- Desvantagens: esse portão de entrada pode se tornar um ponto central de falha
+		- Comportamentos do Gateway
+			- Autorizar e redirecionar os requests
+			- Uso de Decorator para adicionar informações necessárias aos requests
+			- Limitar o acesso ou conteúdo trafegado
+	- Agregador de processos
+		- Process Aggregator Pattern
+			- Serviço de negócio agregam serviços de domínio
+			- Process Aggregators agregam serviços de negócio
+			- Agregadores fazem as chamadas para os serviços necessários e montam a resposta correta
+			- Pode ter lógica de processamento
+		- Construindo um agregador
+			- Definir um novo modelo para representar os dados agregados
+			- A partir do modelo, pensar na API que fornecerá as operações
+	- Edge Pattern
+		- Gateways específicos
+			- Gateway específico para determinados clientes
+			- Foco nas necessidades reais de determinados clientes
+		- Construindo uma ponta
+			- Identificar o cliente e suas necessidades
+			- Construir contratos específicos para o cliente
+			- Modificar os dados que são transferidos para garantir a otimização do processo
+			- Existe a possibilidade de ter apenas Edges, e não gateways 
+- Lidando com dados
+	- Um ou mais DBs?
+		- Single Service Database
+			- Problema: escalabilidade do serviço e do banco são fortemente relacionados
+			- Solução: cada serviço terá seu próprio banco de dados
+		- Shared Service Database
+			- Ás vezes precisamos centralizar os dados
+			- Trate esse banco em cada serviço como se ele fosse separado
+	- Padrões de codificação
+		- CQRS
+			- Com leitura e escrita separados, cada parte pode realizar operações mais complexas
+			- O modelo de leitura pode ter informações agregadas de outros domínios
+			- O modelo de escrita pode ter dados sendo automaticamente gerados
+			- Aumenta a complexidade de um sistema
+	- Eventos assíncronos
+		- Asynchronous Eventing
+			- Determinados problemas não podem ser resolvidos na hora
+			- Um serviço emite um evento que será tratado em seu devido tempo
+			- Tecnologias como mensagerias e serviços de stream de dados brilham
+- Operações
+	- Lidando com logs
+		- Agregação de logs
+			- Formatos de logs devem ser compartilhados entre os serviços
+			- Uma taxonomia comum deve ser compartilhada
+			- Logs de monolitos são agregados por padrão. Com microsserviços, não.
+			- Parte da tarefa de agregação pode ser o parsing dos logs para categorizar corretamente
+		- Rastreando as chamadas
+			- Uma parte importante de realizar logs é rastrear as chamadas de uma execução
+			- Devemos poder construir uma operação a partir de um identificador
+			- Isso é o equivalente à call stack de um sistema monolítico
+			- Use padrões de trace ID para gerar os logs
+			- Use ferramentas de gerenciamento (APMs) para visualizar  
+	- Agregando métricas
+		- Métricas
+			- Precisam de instrumentação
+			- Métricas nos permitem saber o que está acontecendo em determinado momento
+			- Construa ou use dashboards de alto nível para te ruma fácil visão do status atual da aplicação
+			- Depois, tenha dashboards específicos para cada serviços, com mais detalhes
