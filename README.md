@@ -173,7 +173,7 @@
     • [Segurança de redes: crie um firewall com pfSense e iptables](./Semana_14/Seguranca_de_Redes_II/)  
 15. [Semana 15](./Semana_15/)  
     • [Segurança de redes: protegendo dados com VPNs](./Semana_15/Seguranca_de_Redes_III/)  
-    • [Integração Contínua: mais qualidade e menos risco no desenvolvimento](./Semana_15/Integracao_Continua/)
+    • [Integração Contínua: mais qualidade e menos risco no desenvolvimento](./Semana_15/Integracao_Continua/)  
     • [Entrega Contínua: confiabilidade e qualidade na implantação de software](./Semana_15/Entrega_Continua/)  
 16. [Semana 16](./Semana_16/)  
     • [Docker: criando e gerenciando containers](./Semana_16/Docker/)  
@@ -197,7 +197,7 @@
 <table>
     <tr>
         <td>
-            • 23 anos<br>
+            • 24 anos<br>
             • Casado<br>
             • Moro em Valparaíso de Goiás<br>
             • Aficionado pela tecnologia, entusiasta do mundo open-souce, do Linux e da cultura DevOps<br>
@@ -275,7 +275,7 @@
     <td>
         <strong>Faculdade:</strong> Unicesumar<br>
         <strong>Curso:</strong> Tecnólogo em Redes de Computadores<br>
-        <strong>Início:</strong> 06/2022 - <strong>Até:</strong> 01/2025<br>
+        <strong>Início:</strong> 06/2022 - <strong>Até:</strong> 12/2024<br>
     </td>
 </tr>
 <tr>
