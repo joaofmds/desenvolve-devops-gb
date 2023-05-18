@@ -1,0 +1,168 @@
+# Microsserviços: explorando os conceitos
+
+- Arquitetando microsserviços
+	- Componentes de um microsserviço
+		- De que é composto um microsserviço?
+			- Sabemos que cada microsserviço deve ser o dono e gerenciar seus próprios dados. Então será que um microsserviço é um único processo rodando em um único serviço? 
+	- Contratos de microsserviços
+		- Microsserviços são independentes
+			- Um microsserviço expõe alguma forma de comunicação. Isso é o contrato entre este microsserviço e seus clientes
+			- Como manter a API sempre a mesma se o projeto precisa de atualizações e novas funcionalidades
+			- Apenas faça modificações aditivas
+			- Versionamento de APIs
+			- Manter equipes separadas, donas de cada serviço
+	- Identificando barreiras
+		- Recordar é viver
+			- Monolito primeiro
+			- Cada módulo pode ser separado em um microsserviço
+			- DDD pode nos ajudar
+		- O que evitar?
+			- Uma prática comum é transformar todos os substantivos do sistema em microsserviços, mas isso pode gerar muitos data services e serviços anêmicos demais
+		- Pense antes de implementar
+			- Desenhe um fluxo real usando uma arquitetura de microsserviços. Desta forma os problemas de cada abordagem surgirão
+- Criação de serviços
+	- Cuidando do host
+		- Onde manter cada componente de um microserviço
+			- Onde podemos manter todo esse sistema de forma que facilite tanto o desenvolvimento quanto o deploy?
+		- Máquinas Virtuais
+			- Podemos provisionar uma VM de forma automatizada e integrar várias VMs
+			- O custo de processamento é alto
+		- Sistemas em Cloud
+		- Containers
+			- Opção mais recomendada
+	- Criação de novo serviço
+		- Quais as etapas necessárias para criar um novo serviço?
+			- Configurar o repositório para versionarmos nosso código
+			- Mono-repo vs Multi-repo
+			- Integração contínua e entrega contínua
+			- Todo o  processo automatizado e testes confiáveis
+			- Um padrão deve ser seguido para que todas as equipes estejam aptas a criar novos serviços
+	- Definindo um padrão
+		- Padronizando a criação
+			- Criação de logs
+			- Verificação de status
+			- Monitoramento de métricas
+			- Busca por configuração e secrets
+		- Templates
+			- Projeto esqueleto
+			- Scripts de build, mínimo código necessário etc.
+			- Muita agilidade, pouca flexibilidade
+		- Containers
+			- Imagem base do Docker
+			- A partir da imagem, só precisamos começar a codificar e rodar o código nos containers criados
+- Como se comunicar
+	- Visão geral
+		- Como lidar com a comunicação entre serviços?
+			- Não há regras
+		- Possíveis problemas
+			- Dependências descontroladas
+			- Falhas em cascata
+			- Performance prejudicada
+	- Comunicação síncrona
+		- Comunicação direta
+			- Diversos cenários que nos obrigam a realizar chamadas e esperar por suas respostas
+		- Como se comunicar
+			- HTTP
+			- gRPC
+			- Protocolos personalizados
+		- Problema da abordagem
+			- Ao realizar uma chamada direta para outro serviço e esperar sua resposta, problemas neste outro serviços nos afetarão diretamente 
+	- Comunicação assíncrona
+		- Comunicação indireta
+			- Existem cenários onde a resposta não precisa ser obtida imediatamente
+		- Como se comunicar
+			- CQRS (background tasks)
+			- Eventos (mensageria)
+	- Lidando com falhas
+		- Lei de Murphy
+			- Microsserviçso possuem operações intensas em rede. As probabilidades de falha são grandes
+		- Falhas em comunicação síncrona
+			- Circuit Breaker
+			- Cache
+		- Abordagens
+			- Simples Retry
+			- Retry com back-off
+			- Fila de mensagens mortas
+			- Mensagens devem poder ser lidas fora de ordem
+			- Mensagens devem poder ser recebidas repetidamente (idempotência)
+	- Service Discovery
+		- Introdução
+			- Microsserviços podem estar na mesma rede ou em redes separadas, e cada serviço pode estar exposto por um IP
+			- Lidar diretamente com o IP de cada serviço pode trazer muitos problemas
+		- DNS
+			- DNS pode ser utilizado como service registry para sabermos com acessar cada serviço
+			- Um registro pode ter informações sobre quais processos ou máquinas estão de pé e sem falha
+- Segurança de serviços
+	- Segurança geral
+		- Segurança no transporte
+			- HTTPS
+		- Segurança no repouso
+			- Criptografia
+				- Criptografia de disco
+				- Banco de dados cifrados
+				- Criptografia em backups
+			- Anonimização
+	- Autenticação e autorização
+		- Não devemos confiar em ninguém
+			- Ter uma certa segurança não isenta nossa aplicação de lidar diretamente com esse assunto
+		- Autenticação
+			- Cada requisição deve informar quem é o cliente. A partir dessa informação, nossa aplicação pode decidir se a operação será realizada ou não
+		- Técnicas de autenticação
+			- Basic HTTP
+			- Tokens (JWT)
+			- OAuth
+			- OpenID Connect
+		- Autenticação vs Autorização
+			- A autenticação nos permite saber quem está realizando determinada chamada
+			- A partir do processo de autorização decidiremos se a pessoa autenticada pode realizar tal ação
+		- Técnicas de autorização
+			- ACL (Access Control List)
+			- RBAC (Role-Based Access Control)
+			- On behalf of
+	- Segurança de rede
+		- Introdução
+			- É de extrema importância que façamos uso de recursos de rede para manter nossa aplicação ainda mais segura, além do que já foi citado
+		- Redes virtuais
+		- Sistemas de firewall
+		- Lista de IPs permitidos 
+	- Defense in Depth
+		- Devemos dificultar ataques ao máximo
+			- Todas as formas de segurança que foram citadas são muito importantes, mesmo que às vezes redundantes
+		- Como me proteger mais?
+			- Conhecer as ferramentas
+			- Executar pentests
+			- Automatizar verificações de segurança. Faça requisições com certificados inválidos, usuários não autorizados etc
+			- Monitore e detecte ataques em tempo real
+			- Tenha logs e audite os sistemas com frequência
+- Lidando com o deploy
+	- Entregas automatizadas
+		- Muito trabalho
+			- Um monolito pode ser entregue de forma manual, dependendo do caso. Um processo simples sendo executado com periodicidade pode atender alguns cenários
+			- Mas quando tratamos de microsserviços, isso se torna inviável
+		- Release pipeline
+			- Uma release pipeline é uma linha de processos executados para gerar a entrega de um projeto
+			- Nesta pipeline podem estar processos de build, verificações, testes etc
+	- Ambientes de execução
+		- Ambientes diferentes?
+			- Desenvolvimento
+			- Staging/QA
+			- Homologação
+			- Produção
+		- Configurações parametrizadas
+			- Configurações do ambiente em si
+				- Quantidade de recursos
+				- Localização
+			- Configurações da aplicação
+				- Destino de log
+				- Dependências
+				- Dados de acesso
+	- Estratégias de deploy
+		- Do que fazer deploy?
+			- Arquivo distribuível
+			- Tag do git
+			- Imagem de container
+		- Serviços são independentes
+		- Estratégias de releases
+			- Rolling upgrade
+			- Blue-green
+			- Feature toggle
