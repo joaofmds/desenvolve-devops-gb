@@ -166,6 +166,28 @@
 12. [Semana 12](./Semana_12/)  
     • [Shell Scripting parte 1: scripts de automação de tarefas](./Semana_12/Shell_Scripting_I/)  
     • [Shell Scripting parte 2: fazendo monitoramento, agendando tarefas e backup](./Semana_12/Shell_Scripting_II/) 
+13. [Semana 13](./Semana_13/)  
+    • [PowerShell parte 1: a linguagem de scripting moderna](./Semana_13/PowerShell/)  
+14. [Semana 14](./Semana_14/)  
+    • [Segurança de redes: conheça as vulnerabilidades de servidores e clientes](./Semana_14/Seguranca_de_Redes_I/)  
+    • [Segurança de redes: crie um firewall com pfSense e iptables](./Semana_14/Seguranca_de_Redes_II/)  
+15. [Semana 15](./Semana_15/)  
+    • [Segurança de redes: protegendo dados com VPNs](./Semana_15/Seguranca_de_Redes_III/)  
+    • [Integração Contínua: mais qualidade e menos risco no desenvolvimento](./Semana_15/Integracao_Continua/)
+    • [Entrega Contínua: confiabilidade e qualidade na implantação de software](./Semana_15/Entrega_Continua/)  
+16. [Semana 16](./Semana_16/)  
+    • [Docker: criando e gerenciando containers](./Semana_16/Docker/)  
+    • [Kubernetes: Pods, Services e ConfigMaps](./Semana_16/Kubernetes/)  
+17. [Semana 17](./Semana_17/)  
+    • [Kubernetes: Deployments, Volumes e Escalabilidade](./Semana_17/Kubernetes_II/)  
+    • [Amazon EC2: alta disponibilidade e escalabilidade em uma aplicação](./Semana_17/Amazon_EC2/)  
+    • [Amazon EKS: gerenciando aplicações conteinerizadas com Kubernetes](./Semana_17/Amazon_EKS/)
+18. [Semana 18](./Semana_18/)  
+    • [LGPD: conhecendo e entendendo seus impactos](./Semana_18/LGPD/)  
+    • [The Twelve-Factor App: Metodologia para construção de aplicações robustas](./Semana_18/The_Twelve-Factor_App/)  
+19. [Semana 19](./Semana_19/)  
+    • [Microsserviços: padrões de projeto](./Semana_19/Microsservicos_!/)  
+    • [Microsserviços: explorando os conceitos](./Semana_19/Microsservicos_!I/)  
 </span> 
 
 ---
@@ -182,7 +204,7 @@
             • Hobby: Amo ler e tenho uma biblioteca pessoal com mais de 1000 livros<br>
         </td>
         <td>
-            <img src="https://media.licdn.com/dms/image/C4E03AQHaHG8EiOG68g/profile-displayphoto-shrink_800_800/0/1588940970058?e=1682553600&v=beta&t=329DrmNNvfMCmU99bHk4zpupkdw7zL_TUFcyHrCH4BM" alt="João Felipe Mendes de Souza" width=130px>
+            <img src="https://media.licdn.com/dms/image/C4E03AQHaHG8EiOG68g/profile-displayphoto-shrink_800_800/0/1588940970058?e=1689811200&v=beta&t=XjHHu19xQWDTTd9-Q6Kj7HT6-gnKT4fA-qG7difPUAs" alt="João Felipe Mendes de Souza" width=130px>
         </td>
     </tr>
 </table>
@@ -233,11 +255,19 @@
 
 <table>
 <tr>
+    <td><img src="https://media.licdn.com/dms/image/C4E0BAQEB2ovj7KraeQ/company-logo_200_200/0/1639145446323?e=1692230400&v=beta&t=G2KI7XaD-HEDmb2XpD7wwBNvufZrpgJ5RbyZVMbM3Rk" alt="Legale" width="50" height="50"/></td>
+    <td>
+        <strong>Faculdade:</strong> Legale Educacional<br>
+        <strong>Curso:</strong> Pós-Graduação em Direito Digital<br>
+        <strong>Início:</strong> 04/2023 - <strong>Até:</strong> 04/2024<br>
+    </td>
+</tr>
+<tr>
     <td><img src="https://media.licdn.com/dms/image/C4D0BAQFZWLAFEOhH3Q/company-logo_200_200/0/1632513981547?e=1685577600&v=beta&t=KbGns0FoHQWCA8MfaxYfSS6g1i7nSkiT9k0RsnBezXM" alt="Decomplica" width="50" height="50"/></td>
     <td>
         <strong>Faculdade:</strong> Decomplica<br>
         <strong>Curso:</strong> Pós-Graduação em Segurança da Informação<br>
-        <strong>Início:</strong> 10/2022 - <strong>Até:</strong> 10/2023<br>
+        <strong>Início:</strong> 10/2022 - <strong>Até:</strong> 05/2023<br>
     </td>
 </tr>
 <tr>
