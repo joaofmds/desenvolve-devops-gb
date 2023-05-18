@@ -1,0 +1,34 @@
+# The Twelve-Factor App: Metodologia para construção de aplicações robustas
+
+- Conhecendo a metodologia
+	- Apresentação
+	- O que é o 12 Factor App?
+		- Metodologia de desenvolvimento de software
+		- Pode ser aplicada a aplicações escritas em qualquer linguagem de programação, e que utilizem qualquer combinação de serviços de suportes
+	- Quando e como usar
+		- Posso aplicar em qualquer projeto?
+		- Qual o alvo da metodologia
+			- A aplicação doze-fatores é uma metodologia para construir softwares-como-serviço
+		- Preciso aplicar todos os 12 fatores?
+	- Base de código
+		- Manter a base de código versionada
+		- Cada base de código gerar vários deploys
+		- Uma aplicação por base de código
+- Isolando o código
+	- Dependências
+		- Declarar de forma explícita e isolar as dependências do código
+	- Pacotes na prática
+		- Definir as configurações no ambiente
+	- Configurações e serviços
+	- Configurações na prática
+- Isolando a aplicação
+	- Construa, lance e execute
+	- App como processo
+	- Vínculo de porta
+- Gerenciando ambientes
+	- Concorrência e escalabilidade
+	- Descartabilidade
+	- Ambientes semelhantes
+- Cuidando do sistema
+	- Tratamento dos logs
+	- Processos de admin
