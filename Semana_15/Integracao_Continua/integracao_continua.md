@@ -1,0 +1,123 @@
+# Integração Contínua: mais qualidade e menos risco no desenvolvimento
+
+- O que é integração contínua?
+	- Entendendo o problema
+		- Poucos momentos de integração
+		- Integrações frequentes (contínuas)
+		- "Continuos Integration (CI) is a development practice that requires developers to integrate code into a shared repository several times a day"
+	- Sistema de controle de versão
+		- Ferramenta não importa
+		- Comita tudo necessário para construção do projeto
+			- Código
+			- Scripts
+			- Migrações, schemas
+			- IDE Configs
+		- Não commita o que pode ser construído (gem, jar, image, modules)
+		- Clone e começar (deve ser fácil)
+	- Organização dos repositórios
+		- Multi-repo
+		- Mono-repo
+- Estratégias de ramificação
+	- O que são Branching Models?
+		- Master
+		- Development
+		- Release
+		- "Everyone commits to the mainline every day" - Martin Fowler
+		- Commits simples e lançáveis, orientado às tarefas
+		- Branches atrasam integração, seguram o código
+		- Branches de vida curta -> merges mais simples
+		- Muitos branches, mais burocracia
+		- Estratégias devem ser combinadas pela equipe
+	- Comparando Modelos
+		- Temporários (branches locais)
+		- Feature Branches
+		- Historical Branches (Master e Develop)
+		- Environment Branches (Staging e Production)
+		- Maintenance Branches (Release e Hotfix)
+		- Trunk-Based Development
+		- Feature Branch Workflow
+		- Feature Branch + Pull Request
+		- Github Flow (Master + Feature Branch + Pull Request)
+		- Gitlab Flow (Feature Branch + Pull Request + ENV Branches)
+		- Git Flow(Feature Branch + Pull Request + Maintenance Branches + Historical Branches)
+	- Branch by abstraction
+		- Feature Flags e Branch by Abstraction
+	- Merge e Rebase
+		- Merge commit
+- Builds e testes automatizados
+	- Self testing
+		- Testes automatizados
+			- Testes fazem parte da construção
+			- Rodar antes do commit
+			- TDD pode ajudar
+			- Desempenho importa
+		- Test Driven Development
+		- Pirâmide de testes
+			- Smoke tests
+		- Resumindo...
+			- Categorizar os testes
+			- Rodar testes rápidos primeiro
+			- Usar smoke tests
+			- Testes fazem parte do build
+			- Aplicar boas práticas de testes
+			- Feedback
+	- Build automatizado
+		- Etapas do build
+			- Clean
+			- Compile
+			- Unit Tests
+			- Static Analysis
+			- Package Software
+			- Integrate database
+		- Deve-se:
+			- build a cada commit
+			- Tudo automatizado/single commando
+			- Build sem depender da IDE
+			- Tudo está no repositório
+		- Single Command / Builds rápidos
+			- Otimize o build, métricas ajudam
+				- Verifique a fase de teste e análise do código
+				- Verifique a ordem dessas fases
+				- Verifique a infra do build system
+				- Use cache
+			- Use staged build / pipeline (light build, heavy build)
+			- Regra: "Ten minute build"
+		- Resumindo...
+			- Use ferramentas para automatizar o build
+			- Use commit-build
+			- Build deve ser independente da IDE
+			- Estrutura de diretórios bem definidos e conhecidos
+			- Builds rápidos que falham rápido
+			- Script único que para ambientes
+				- Comando único de build
+			- Use build machine
+- Mais feedback com builds contínuas
+	- Servidor de integração contínua
+		- Builds e testes contínuos
+			- CI Daemon
+	- Build quebrado
+		- Corrija builds quebrados imediatamente
+- Um pouco sobre a entrega contínua
+	- Certificação de CI
+		- Você commita diariamente o seu código na mainline do projeto?
+		- Build e testes rodam automatizados e trazem a confiança que o software está correto?
+		- Quando um build quebra, a equipe conserta em +- 10 minutos?
+	- O que é entrega contínua?
+		- Manifesto Ágil
+			- "Working software over comprehensive documentation"
+			- "Our highest priority is to satisfy the customer through early and continuous delivery of valuable software"
+		- Entrega contínua
+			- RNF: deployability
+			- Padrões:
+				- Deployment pipeline 
+				- Deploys de baixo riso
+					- Deploy incremental
+					- Separar deploy e publicação
+					- Deploys frequentes
+					- Otimizar para resiliência
+		- Colaboração
+			- QA
+			- Deploy
+			- Operações
+	- Sobre DevOps
+		- Pessoas que melhoram e otimizam o processo
