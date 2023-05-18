@@ -80,7 +80,7 @@
                 <img width="50px" src="https://cdn.iconscout.com/icon/free/png-256/docker-226091.png?w=128&f=avif" alt="Docker">
             </td>
             <td>
-                <img width="50px" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/kubernetes-icon.svg" alt="Kubernetes">
+                <img width="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/2109px-Kubernetes_logo_without_workmark.svg.png" alt="Kubernetes">
             </td>
         </tr>
         <tr>
@@ -88,7 +88,7 @@
                 <h3><strong>Cloud e Automação</strong></h3>
             </td>
             <td>
-                <img width="50px" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/aws-icon.svg" alt="Amazon Web Services">  
+                <img width="50px" src="https://uploads.concordia.net/2023/02/16161824/1200px-Amazon_Web_Services_Logo.svg-1-1400x1398.png" alt="Amazon Web Services">  
             </td>
             <td>
                 <img width="50px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxs6F1Y8wFOreLS97kCGSAoKp2d7LLTD6do483qoUL7_XnAEOqmFLq9GGqgXWB6JWV0xs&usqp=CAU" alt="Terraform">
